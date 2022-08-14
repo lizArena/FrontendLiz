@@ -1,1 +1,42 @@
-<p>skills works!</p>
+
+<div class="container-fluid">
+    <div class="row">
+        <h6 class="text-center">Hard & Soft</h6>
+        <h2 class="text-center fw-bold text-uppercase mb-4" id="color">Skills</h2>
+
+
+        <div class="col-12 text-center">
+            <button type="button" class="btn btn-dark add-button" routerLink="/nuevaskill" *ngIf="isLogged"><i class="bi bi-plus-lg"></i>
+            </button>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="row" >  
+        <div class="col-lg-10 offset-lg-1" *ngFor="let Skills of skill">
+            <div class="container">            
+                    <div class="row d-flex align-items-end">
+                        <div class="col-12 col-md-10 name-skill">
+                            <h5 id="color">{{Skills.nombreS}}</h5>
+                            <div class="progress">                                
+                                <div class="progress-bar" style="width:{{Skills.porcentajeS}}%" role="progressbar">
+                                    <h6>{{Skills.porcentajeS}}%</h6>
+                                    
+                                </div>
+                             
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-2 buttons-col text-end mt-2 mt-md-auto" *ngIf="isLogged">
+                            <button class="btn btn-light edit-button m-1" routerLink="/editskill/{{Skills.id}}">
+                                <i class="bi bi-pencil-fill"></i>
+                            </button>
+                            <button class="btn btn-danger delete-button m-1" (click)="delete(Skills.id)">
+                                <i class="bi bi-trash-fill"></i>
+                            </button>
+                        </div> 
+                        <br><br>
+                    </div>
+            </div>
+        </div>
+    <br><br><br><br>
+    </div>

@@ -1,3 +1,6 @@
 .row{
     background: hwb(214 1% 67% / 0.899);
 }
+#color{
+    color: rgba(154, 209, 254, 0.912);
+}
