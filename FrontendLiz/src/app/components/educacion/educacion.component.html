@@ -1,13 +1,16 @@
 <div class="row">
     <h2 id="color">Educación</h2>
+    <br><br><br>
     <div class="col-lg-2">
         <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
          Nueva Educación
         </button>
+        <br>
+        <br>
     </div>
 
     <div class="col lg 1"></div>
-    <div class="col-sm-12 col-md-11 col-lg-11">
+    <div class="col-sx-12 col-md-11 col-lg-11">
         <table class="table">
             <tbody>
                 <tr *ngFor="let Educacion of edu">
