@@ -11,9 +11,9 @@
             <tbody>
                 <tr *ngFor="let Proyectos of pro">
                     <td>
-                        <h4>{{Proyectos.nombrePro}}</h4>
+                        <h4 id="colorC">{{Proyectos.nombrePro}}</h4>
                     </td>
-                    <td>{{Proyectos.descripcionPro}}</td>
+                    <td id="color">{{Proyectos.descripcionPro}}</td>
                     <td>{{Proyectos.fechaPro}}</td>
                     
                     <td *ngIf="isLogged">

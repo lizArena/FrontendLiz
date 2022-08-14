@@ -1,0 +1,13 @@
+.row{
+    padding: 20px;
+    background-color: rgb(0, 28, 58);
+
+}
+div{
+    background-color: rgb(0, 28, 58);
+    text-align: left;
+    color: rgba(2, 216, 253);
+}
+#color{
+    color: rgba(2, 216, 253);
+}

@@ -1,1 +1,29 @@
-<p>about-new works!</p>
+<!-- Main -->
+
+<div class="container-fluid" *ngFor="let persona of pers">
+ 
+    <div class="row" >
+        <div class="col-md-4 px-5 py-4 text-center">
+            <img src={{persona.imgP}} class="img-fluid img-perfil" id="fotodeperfil">     
+            <h1 class="fw-bold mt-3" id="nombre">{{persona.nombreP}} {{persona.apellidoP}}</h1>
+            <h6>{{persona.positionP}}</h6>  
+        </div>
+
+        <div class="col-md-7 p-5">
+                <h3 class="fw-bold" id="estilo">Acerca de mí</h3>
+                <p id="estilo">{{persona.aboutMeP}}</p> 
+                      
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="edit-persona-btn text-end" *ngIf="isLogged"> 
+                <button type="button" class="btn btn-light" routerLink="/editpersona/{{persona.id}}">
+                    <i class="bi bi-pencil-fill"></i>
+                </button>
+            </div> 
+        </div>
+    </div>
+
+</div>

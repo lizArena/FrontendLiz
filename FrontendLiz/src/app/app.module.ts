@@ -26,6 +26,7 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 import { EditProyectosComponent } from './components/proyectos/edit-proyectos.component';
 import { EditSkillsComponent } from './components/skills/edit-skills.component';
+import { EditAboutNewComponent } from './components/about-new/edit-about-new.component';
 
 
 
@@ -55,6 +56,7 @@ import { EditSkillsComponent } from './components/skills/edit-skills.component';
     EditEducacionComponent,
     EditProyectosComponent,
     EditSkillsComponent,
+    EditAboutNewComponent,
    
    
   
