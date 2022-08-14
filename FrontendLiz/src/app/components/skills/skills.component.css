@@ -6,12 +6,12 @@
 div{
     background-color: rgb(0, 28, 58);
     text-align: left;
-    color: rgba(254, 219, 154, 0.912);
+    color: rgba(2, 216, 253);
 }
 #color{
-    color: rgba(154, 209, 254, 0.912);
+    color: rgba(2, 216, 253);
 }
 
 .progress-bar{
-    background-color: #2E6C83;
+    background-color: rgba(207, 91, 94);
 }
