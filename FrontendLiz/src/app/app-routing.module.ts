@@ -21,7 +21,7 @@ const routes: Routes=[
   { path: 'editexp/:id', component: EditExperienciaComponent},
   { path: 'nuevaedu', component: NewEducacionComponent},
   { path: 'editedu/:id', component: EditEducacionComponent},
-  { path: 'nuevapro', component:NewProyectosComponent},
+  { path: 'nuevopro', component:NewProyectosComponent},
   { path: 'editpro/:id', component:EditProyectosComponent},
   { path: 'nuevaskill', component:NewSkillsComponent},
   { path: 'editskill/:id', component:EditSkillsComponent},
