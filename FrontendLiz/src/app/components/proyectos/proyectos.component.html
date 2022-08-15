@@ -14,11 +14,11 @@
                 <div class="row row-pro" *ngFor="let Proyectos of pro">
                     
                     <div class="col-md-3 col-sm-12 nombrePro">
-                        <h3>{{Proyectos.nombrePro}}</h3>
+                        <h3 id="colorC">{{Proyectos.nombrePro}}</h3>
                     </div>
                     <div class="col-md-7 col-sm-10 descripcion-pro">
                         <h6 class="d-inline-block">{{Proyectos.fechaPro}} </h6>
-                        <p>{{Proyectos.descripcionPro}} </p>
+                        <p id="estilo">{{Proyectos.descripcionPro}} </p>
                     </div>
                     
                     <div class="col-12 text-end col-md-2" *ngIf="isLogged">

@@ -15,11 +15,11 @@
 
                 <div class="row row-edu" *ngFor="let Educacion of edu">
                     <div class="col-md-3 col-sm-12 nombre-e" >
-                        <h3>{{Educacion.nombreEdu}}</h3>                            
+                        <h3 id="colorC">{{Educacion.nombreEdu}}</h3>                            
                     </div>
                     <div class="col-md-7 col-sm-10 descripcion-e" >
                         <h6 class="d-inline-block">{{Educacion.fechaEdu}}</h6>
-                        <p>{{Educacion.descripcionEdu}}</p>
+                        <p id="estilo">{{Educacion.descripcionEdu}}</p>
                     </div>
 
                     <div class="col-md-2 col-sm-2 text-end buttons-e" *ngIf="isLogged">
