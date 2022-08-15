@@ -7,28 +7,30 @@
         </button>
         <br><br>
     </div>
-  <div class="col lg 1"></div>
-    <div class="col-lg-11 col-md-11 col-sm-11">
-        <table class="table">
-            <tbody>
-                <tr *ngFor="let Proyectos of pro">
-                    <td>
-                        <h4 id="colorC">{{Proyectos.nombrePro}}</h4>
-                    </td>
-                    <td id="color">{{Proyectos.descripcionPro}}</td>
-                    <td id="color">{{Proyectos.fechaPro}}</td>
+
+    <div class="col-lg-10 offset-lg-1 section-pro">
+        <div class="container">
+
+                <div class="row row-pro" *ngFor="let Proyectos of pro">
                     
-                    <td *ngIf="isLogged">
+                    <div class="col-md-3 col-sm-12 nombrePro">
+                        <h3>{{Proyectos.nombrePro}}</h3>
+                    </div>
+                    <div class="col-md-7 col-sm-10 descripcion-pro">
+                        <h6 class="d-inline-block">{{Proyectos.fechaPro}} </h6>
+                        <p>{{Proyectos.descripcionPro}} </p>
+                    </div>
+                    
+                    <div class="col-12 text-end col-md-2" *ngIf="isLogged">
                         <button class="btn btn-light edit-button m-1" routerLink="/editpro/{{Proyectos.id}}">
                             <i class="bi bi-pencil-fill"></i></button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger delete-button m-1" (click)="delete (Proyectos.id)">
+                        <button class="btn btn-danger delete-button m-1" (click)="delete(Proyectos.id)">
                             <i class="bi bi-trash-fill"></i></button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    </div>
+
+                </div>
+
+        </div>
     </div>
 </div> 
 
